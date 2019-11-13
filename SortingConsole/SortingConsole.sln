@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingConsole", "SortingConsole\SortingConsole.csproj", "{C096A36D-A5BD-42EF-8EE5-93F44355A043}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C096A36D-A5BD-42EF-8EE5-93F44355A043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C096A36D-A5BD-42EF-8EE5-93F44355A043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C096A36D-A5BD-42EF-8EE5-93F44355A043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C096A36D-A5BD-42EF-8EE5-93F44355A043}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {621BBD5B-717B-40E8-B4BA-51A5BE4ED7E0}
+	EndGlobalSection
+EndGlobal

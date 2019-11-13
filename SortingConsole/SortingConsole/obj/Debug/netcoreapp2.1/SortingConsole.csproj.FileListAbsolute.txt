@@ -1,0 +1,11 @@
+C:\Users\Michal\source\repos\SortingConsole\SortingConsole\bin\Debug\netcoreapp2.1\SortingConsole.deps.json
+C:\Users\Michal\source\repos\SortingConsole\SortingConsole\bin\Debug\netcoreapp2.1\SortingConsole.runtimeconfig.json
+C:\Users\Michal\source\repos\SortingConsole\SortingConsole\bin\Debug\netcoreapp2.1\SortingConsole.runtimeconfig.dev.json
+C:\Users\Michal\source\repos\SortingConsole\SortingConsole\bin\Debug\netcoreapp2.1\SortingConsole.dll
+C:\Users\Michal\source\repos\SortingConsole\SortingConsole\bin\Debug\netcoreapp2.1\SortingConsole.pdb
+C:\Users\Michal\source\repos\SortingConsole\SortingConsole\obj\Debug\netcoreapp2.1\SortingConsole.csprojAssemblyReference.cache
+C:\Users\Michal\source\repos\SortingConsole\SortingConsole\obj\Debug\netcoreapp2.1\SortingConsole.csproj.CoreCompileInputs.cache
+C:\Users\Michal\source\repos\SortingConsole\SortingConsole\obj\Debug\netcoreapp2.1\SortingConsole.AssemblyInfoInputs.cache
+C:\Users\Michal\source\repos\SortingConsole\SortingConsole\obj\Debug\netcoreapp2.1\SortingConsole.AssemblyInfo.cs
+C:\Users\Michal\source\repos\SortingConsole\SortingConsole\obj\Debug\netcoreapp2.1\SortingConsole.dll
+C:\Users\Michal\source\repos\SortingConsole\SortingConsole\obj\Debug\netcoreapp2.1\SortingConsole.pdb
