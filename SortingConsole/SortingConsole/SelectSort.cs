@@ -5,13 +5,13 @@ using System.Text;
 
 namespace SortingConsole
 {
-    class SelectSort : ObjSort
+    class SelectSort : ObjSort, ISortable
     {
         public SelectSort(string file) : base(file) { }
         public SelectSort(List<float> list) : base(list) { }
 
         // (TODO 1) to powinno być uniwersalne (być w klasie ObjSort) i działać na interfejsach, ale niestety ich nie ogarniam, więc niech zostanie na razie tak
-        public void PerformenceTest(int numberOfIterations, int maxElements, int avgFrom)
+        public void PerformanceTest(int numberOfIterations, int maxElements, int avgFrom)
         {
             Console.WriteLine($"Performance test for Select Sort started. note that every record is an average from {avgFrom} tests");
             int step = maxElements / numberOfIterations;
@@ -32,7 +32,7 @@ namespace SortingConsole
                     fullTime.Start();
                     localTime.Start();
 
-                    noOperations = sorted.SortAsc();
+                    noOperations += sorted.SortAsc();
 
                     localTime.Stop();
                     fullTime.Stop();

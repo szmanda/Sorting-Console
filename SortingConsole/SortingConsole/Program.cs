@@ -18,6 +18,11 @@ namespace SortingConsole
             BubbleSort kon = new BubbleSort(new List<float> { 6f, 0f, 5.3f,8f,10.5f,4f,2.4f,7f,2f });
             kon.SortAscWrite();
             Console.WriteLine("\n\n");
+            HeapSort anas = new HeapSort(new List<float> { 6f, 0f, 5.3f, 8f, 10.5f, 4f, 2.4f, 7f, 2f });
+            anas.SortAscWrite();
+            Console.WriteLine("\n\n");
+
+            Console.ReadKey();
 
             //BubbleSort awa = new BubbleSort(new List<float> { 9,8,7,6,5,4,3,2,1,0});
             //awa.SortAsc();
@@ -27,16 +32,31 @@ namespace SortingConsole
             //sortowany.DisplayList();
 
             BubbleSort b = new BubbleSort(PrepairFile.GenerateRandomList(6));
-            b.PerformenceTest(4, 2048, 16);
+            b.PerformanceTest(4, 2048, 16);
             Console.WriteLine("\n\n");
 
             SelectSort s = new SelectSort(PrepairFile.GenerateRandomList(6));
             s.SortAsc();
             //ObjSort.DisplayList(s.SortedList);
-            s.PerformenceTest(4, 2048, 16);
+            s.PerformanceTest(4, 2048, 16);
+
+            
+
+            List<ISortable> sortable = new List<ISortable>();
+            sortable.Add(new BubbleSort(PrepairFile.GenerateRandomList(10)));
+            sortable.Add(new SelectSort(PrepairFile.GenerateRandomList(10)));
+            sortable.Add(new HeapSort(PrepairFile.GenerateRandomList(10)));
+
+            foreach (var item in sortable)
+            {
+                item.PerformanceTest(4, 2048, 4);
+            }
+
+
 
             Console.WriteLine("Press any key to close");
             Console.ReadKey();
+
         }
         
     }

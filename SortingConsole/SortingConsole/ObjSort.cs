@@ -19,6 +19,7 @@ namespace SortingConsole
             SetPreferences("\n",file);
             ReadFromFile();
         }
+
         public ObjSort(List<float> readFromList)
         {
             SetPreferences();
@@ -29,8 +30,9 @@ namespace SortingConsole
         {
             foreach (var item in collection)
             {
-                Console.WriteLine(item + "\t");
+                Console.Write(item + "\t");
             }
+            Console.WriteLine();
         }
 
         public virtual void DisplayList()
