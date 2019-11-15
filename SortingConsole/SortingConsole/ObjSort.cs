@@ -52,7 +52,7 @@ namespace SortingConsole
         public void SetPreferences(String separ = "\n", String file = "file.txt")
         {
             separator = new string[] { "\n" };
-            sourceFile = "file.txt";
+            sourceFile = file;
         }
 
         public void ReadFromFile()

@@ -7,5 +7,7 @@ namespace SortingConsole
     interface ISortable
     {
         void PerformanceTest(int numberOfIterations, int maxElements, int avgFrom);
+
+        int SortAscWrite();
     }
 }

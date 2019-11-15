@@ -51,7 +51,7 @@ namespace SortingConsole
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine($"Summary:\ntime: {fullTime.ElapsedMilliseconds} ms");
         }
-        public void SortAscWrite()
+        public int SortAscWrite()
         {
             int count = UnsortedList.Count;
             float[] usTab = UnsortedList.ToArray();
@@ -101,6 +101,7 @@ namespace SortingConsole
             SortedList = temporaryList;
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine($"Sortowanie zakończone, liczba kroków: {ca} + {cb} jeśli liczyć te bez zamiany elementów");
+            return ca + cb;
         }
         public int SortAsc()
         {

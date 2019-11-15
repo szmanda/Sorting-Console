@@ -79,5 +79,54 @@ namespace SortingConsole
             SortedList = temporaryList;
             return ca;
         }
+        public int SortAscWrite()
+        {
+            var count = UnsortedList.Count;
+            float[] usTab = UnsortedList.ToArray();
+            int ca = 0;
+
+            Console.WriteLine("Select sort started work on following set:");
+            ObjSort.DisplayList(this.UnsortedList);
+
+            for (int i = 0; i < count; i++)
+            {
+                int lowestIndex = i;
+                for (int j = i + 1; j < count; j++)
+                {
+                    if (usTab[j] < usTab[lowestIndex])
+                        lowestIndex = j;
+                    ca++;
+                }
+                float temp = usTab[i];
+                usTab[i] = usTab[lowestIndex];
+                usTab[lowestIndex] = temp;
+                // wyświetlanie
+                for (int k = 0; k < usTab.Length; k++)
+                {
+                    if (k == i || k == lowestIndex)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.Write("  |" + usTab[k]);
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    else
+                    {
+                        Console.Write("  |" + usTab[k]);
+                    }
+
+                }
+                Console.WriteLine();
+            }
+
+            var temporaryList = new List<float>();
+            for (int i = 0; i < count; i++)
+            {
+                temporaryList.Add(usTab[i]);
+            }
+            SortedList = temporaryList;
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine($"Sortowanie zakończone, liczba kroków: {ca}");
+            return ca;
+        }
     }
 }
